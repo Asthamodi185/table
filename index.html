@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table </title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        caption{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: larger;
+            text-transform: capitalize;
+            background-color: black;
+            color: white;
+        
+        }
+        table{ text-align: center;
+            background-color: rgb(41, 37, 37);
+            border: 1px solid black;
+        width: 50%;
+            height: 80%;
+            margin: auto;
+color: white;
+
+text-shadow: 1px 1px 5px  black;
+
+        }
+        
+    .col1{
+        background-color:rgb(85, 33, 113)   }
+.col11 { background-color: rgb(147, 88, 179)}
+      .col2{
+        background-color: rgb(49, 3, 155) ;
+      } 
+      .col21{ background-color: rgb(64, 0, 214);}
+      .col3{
+        background-color: rgb(0, 82, 234);
+      } 
+      .col31{background-color: rgb(70, 126, 230);}
+      .col4{background-color: rgb(0, 154, 205);}
+        .col41{background-color: rgb(116, 186, 209);}
+        .row1{
+            background-color: rgb(3, 91, 43);
+        }
+        .row11{background-color: rgb(51, 128, 85);}
+        .row2{background-color: rgb(66, 153, 0);}
+        .row21{background-color:rgb(109, 171, 63) ;}
+        .row3{background-color: rgb(166, 255, 0);}
+        .row31{background-color: rgb(201, 255, 101);}
+        td{
+            background-color: lightgoldenrodyellow;
+            color: black;
+            text-shadow: none;
+            text-transform: capitalize;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <table>
+ <caption>table sample</caption>
+        <thead>
+            <tr>
+<th></th>
+<th></th>
+<th colspan="3" scope="colgroup" class="col1">coloumhead 1</th>
+<th scope="col" class="col2">coloumhead 2</th>
+<th colspan="4"  class="col3" scope="colgroup">coloumhead 3</th>
+<th colspan="3" scope="colgroup" class="col4">coloumhead 4</th>
+            </tr>
+
+<tr class="coloum2">
+<th></th>
+<th ></th>
+<th class="col11">coloumhead 1.1</th>
+<th class="col11" >coloumhead 1.2</th>
+<th class="col11">coloum head 1.3</th>
+<th class="col21">coloum head 2.1</th>
+<th class="col31">coloum head 3.1</th>
+<th class="col31">coloum head 3.2</th>
+<th class="col31">coloum head 3.3</th>
+<th class="col31">coloum head 3.4</th>
+<th class="col41">coloum head 4.1</th>
+<th class="col41">coloum head 4.2</th>
+<th class="col41">coloum head 4.3</th>
+</tr>
+<tdata>
+    <tr>
+        <th rowspan="2" scope="rowgroup" class="row1">row head 1</th>
+        <th class="row11">row head 1.1</th>
+        <td colspan="3">data</td>
+        <td> data</td>
+        <td colspan="3">data</td>
+        <td>data</td>
+        <td colspan="3">data</td>
+    </tr>
+    <tr>
+        <th class="row11">rowhead 1.2</th>
+        <td colspan="3">data</td>
+        <td>data</td>
+        <td colspan="7">data</td>
+    </tr>
+    <tr>
+        <th rowspan="2" class="row2" scope="rowgroup">rowhead 2</th>
+        <th class="row21">rowhead 2.1</th>
+        <td colspan="3" >data</td>
+        <td>data</td>
+        <td colspan="7">data</td>
+    </tr>
+    <tr>
+        <th class="row21">rowhead 2.2</th>
+        <td colspan="3">data</td>
+        <td>data</td>
+        <td colspan="3">data</td>
+        <td colspan="4">data</td>
+    </tr>
+    <tr>
+        <th class="row3">rowhead 3</th>
+        <th class="row31">rowhead 3.1</th>
+        <td colspan="3">data</td>
+        <td>data</td>
+        <td colspan="7">data</td>
+    </tr>
+</tdata>
+        </thead>
+    </table>
+</body>
+</html>
